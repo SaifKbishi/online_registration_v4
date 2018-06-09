@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my Online Registration</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"  type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h2 class="title">TEH CODE REVIEW</h2>
+      <h2 class="signup container">Signup for our newsletter</h2>
+      <h4 class="container">Get the latest news on how your code is doing right in your inbox</h4>
+    </header>
+    <hr class="first-hr container">
+    <hr class="second-hr container">
+    <form class="mform container" action="index.html" method="post">
+        <fieldset id="CI_fSet">
+          <legend>Contact Information</legend>
+          <label for="name" class="info">Full Name</label>
+          <input type="text" class="info" id="name" name="client_name" value="" required="" placeholder="Required">
+          <label for="email" class="info">Email Address</label>
+          <input type="email" class="info" id="email" name="client_email" value="" required="" placeholder="Required, eg. emmail@email.com">
+          <label for="phone" class="info">Phone Number</label>
+          <input type="text" class="info" id="phone" name="clientclient_phone" value="" placeholder="555-5555555">
+          <label for="city" class="info">City</label>
+          <input type="text" class="info" id="city" name="client_city" value="" placeholder="City">
+          <label for="state" class="info">State</label>
+          <select class="states" id="state" name="client_state">
+            <option disabled selected value="" class="firstOption">Choose State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+          </select>
+          <label for="zipcode" class="info">Zip Code</label>
+          <input type="text" class="info" id="zipcode" name="client_zipcode" value="" placeholder="zipcode">
+        </fieldset>
+      <hr class="second-hr">
+        <fieldset>
+          <legend>Newsletter</legend>
+          <label class="labels">Select the newsletters you would like to recieve</label><br>
+            <input type="checkbox" id="HTML_news" name="client_newsletetr" value="newsletter_HTML"><label for="HTML_news">HTML News</label><br>
+            <input type="checkbox" id="CSS_news" name="client_newsletetr" value="newsletter_CSS"><label for="CSS_news">CSS News</label><br>
+            <input type="checkbox" id="JS_news" name="client_newsletetr" value="newsletter_JS"><label for="JS_news">Javascript News</label>
+        </fieldset>
+        <fieldset>
+          <label class="labels">Newsletter format</label><br>
+            <input type="radio" id="ltr_frmt_HTML" name="NL_format" value="HTML"><label  for="ltr_frmt_HTML">HTML</label><br>
+            <input type="radio" id="ltr_frmt_plain" name="NL_format" value="Plain text"><label for="ltr_frmt_plain">Plain text</label>
+        </fieldset>
+        <fieldset>
+          <label for="othertoptics" class="labels">Other topics you'd like to hear about</label>
+          <textarea id="othertoptics" name="othertoptics" rows="6" cols="80" placeholder="free text here"></textarea>
+          <input class="btn" type="submit" name="SignUpBtn" value="Sign Up">
+        </fieldset>
+    </form>
+    <footer class="footer">Copyright The  Code Review</footer>
+  </body>
+</html>
