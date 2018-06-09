@@ -103,7 +103,13 @@ input#zipcode{
 .labels{
   display: block;
 }
-
+input[type="checkbox"]:checked + label {
+    color: #428bca;
+}
+ input[type="radio"]:checked + label{
+	border:solid 1px #428bca;	
+	
+}
 
 
 /*Tablet and Desktop screens*/
