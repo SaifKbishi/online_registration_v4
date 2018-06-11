@@ -23,7 +23,7 @@
           <label for="email" class="info">Email Address</label>
           <input type="email" class="info" id="email" name="client_email" value="" required placeholder="Required, eg. emmail@email.com">
           <label for="phone" class="info">Phone Number</label>
-          <input type="text" class="info" id="phone" name="clientclient_phone" value="" placeholder="555-5555555">
+          <input type="tel" class="info" id="phone" name="clientclient_phone" value="" placeholder="555-5555555">
           <label for="city" class="info">City</label>
           <input type="text" class="info" id="city" name="client_city" value="" placeholder="City">
           <label for="state" class="info">State</label>
@@ -58,23 +58,25 @@
           <input type="text" class="info" id="zipcode" name="client_zipcode" value="" placeholder="zipcode">
         </fieldset>
       <hr class="second-hr">
-        <fieldset>
-          <legend>Newsletter</legend>
-          <label class="labels">Select the newsletters you would like to recieve</label><br>
-            <input type="checkbox" id="HTML_news" name="client_newsletetr" value="newsletter_HTML"><label for="HTML_news">HTML News</label><br>
-            <input type="checkbox" id="CSS_news" name="client_newsletetr" value="newsletter_CSS"><label for="CSS_news">CSS News</label><br>
-            <input type="checkbox" id="JS_news" name="client_newsletetr" value="newsletter_JS"><label for="JS_news">Javascript News</label>
-        </fieldset>
-        <fieldset>
-          <label class="labels">Newsletter format</label><br>
-            <input type="radio" id="ltr_frmt_HTML" name="NL_format" value="HTML"><label  for="ltr_frmt_HTML">HTML</label><br>
-            <input type="radio" id="ltr_frmt_plain" name="NL_format" value="Plain text"><label for="ltr_frmt_plain">Plain text</label>
-        </fieldset>
-        <fieldset>
-          <label for="othertoptics" class="labels">Other topics you'd like to hear about</label>
-          <textarea id="othertoptics" name="othertoptics" rows="6" cols="80" placeholder="free text here"></textarea>
-          <input class="btn" type="submit" name="SignUpBtn" value="Sign Up">
-        </fieldset>
+		<fieldset>
+			<legend>Newsletter</legend>
+			<fieldset>
+				<label class="labels">Select the newsletters you would like to recieve</label><br>
+				<input type="checkbox" id="HTML_news" name="client_newsletetr" value="newsletter_HTML"><label for="HTML_news">HTML News</label><br>
+				<input type="checkbox" id="CSS_news" name="client_newsletetr" value="newsletter_CSS"><label for="CSS_news">CSS News</label><br>
+				<input type="checkbox" id="JS_news" name="client_newsletetr" value="newsletter_JS"><label for="JS_news">Javascript News</label>
+			</fieldset>
+			<fieldset>
+				<label class="labels">Newsletter format</label><br>
+				<input type="radio" id="ltr_frmt_HTML" name="NL_format" value="HTML"><label  for="ltr_frmt_HTML">HTML</label><br>
+				<input type="radio" id="ltr_frmt_plain" name="NL_format" value="Plain text"><label for="ltr_frmt_plain">Plain text</label>
+			</fieldset>
+			<fieldset>
+				<label for="othertoptics" class="labels">Other topics you'd like to hear about</label>
+				<textarea id="othertoptics" name="othertoptics" rows="6" cols="80" placeholder="free text here"></textarea>
+				<input class="btn" type="submit" name="SignUpBtn" value="Sign Up">
+			</fieldset>
+		</fieldset>
     </form>
     <footer class="footer">Copyright The  Code Review</footer>
   </body>

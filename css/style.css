@@ -110,7 +110,9 @@ input[type="checkbox"]:checked + label {
 	border:solid 1px #428bca;	
 	
 }
-
+::placeholder{	
+	text-align:right;
+}
 
 /*Tablet and Desktop screens*/
 @media screen and  (min-width: 769px) {
